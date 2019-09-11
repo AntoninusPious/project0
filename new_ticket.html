@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sykes Printing Job Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div style="margin-bottom: 0; background-color: #b3d9ff" class="jumbotron text-center">
+      <h2>Sykes Printing - Job and Customer Management</h2>
+      <p>Interface to display and modify jobs and customer listings</p>
+    </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="new_ticket.html">Create new job ticket</a></li>
+      <li><a href="search_jobs.html">Search job tickets</a></li>
+      <li><a href="search_customers.html">Search customers</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="employee_login.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class="container">
+  <div class="row">
+    <h2 style="text-align: center; color: #ff3300">Create New Job</h2>
+    <div class="container">
+    <h3>Enter job information</h3>
+    <form action="/action_page.php">
+      <div class="radio">
+      <label><input type="radio" name="customerType" id="business_customer">Business Customer</label>
+      <label><input type="radio" name="customerType" id="individual_customer">Individual Customer</label>
+      </div>
+      <div class="radio">
+        <label><input type="radio" name="job_source" id="in_house">In-house</label>
+        <label><input type="radio" name="job_source" id="order_out">Order out</label>
+      </div>
+      <div class="form-group">
+        <label for="job_id">Job ID #:</label>
+        <input type="text" class="form-control" id="job_id" placeholder="Auto increment job #" name="job_id">
+      </div>
+      <h4>Contact information</h4>
+      <div class="input-group">
+        <span class="input-group-addon">Business Name</span>
+        <input id="business_name" type="text" class="form-control" name="businessName" placeholder="Enter business name">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon">First Name</span>
+        <input id="first_name" type="text" class="form-control" name="firstName" placeholder="Enter contact's first name">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon">Last Name</span>
+        <input id="last_name" type="text" class="form-control" name="lastName" placeholder="Enter contact's last name">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon">Business phone</span>
+        <input id="business_phone" type="text" class="form-control" name="b" placeholder="Enter contact's last name">
+      </div>
+
+
+
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+
+  </form>
+
+  </body>
+</html>

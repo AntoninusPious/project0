@@ -27,28 +27,26 @@
 </nav>
     <div class="container">
   <div class="row">
-    <div class="col-sm-4">
-      <h3>Current Open Orders</h3>
-      <p><a href="job_id#0001">Job ID #1, MyClient_Name 1, Job description text here, Due 1/1/2020</a></p>
-      <p><a href="job_id#0002">Job ID #2, MyClient_Name 2, Job description text here, Due 1/1/2020</a></p>
-      <p><a href="job_id#0003">Job ID #3, MyClient_Name 1, Job description text here, Due 1/1/2020</a></p>
-      <p><a href="job_id#0004">Job ID #4, MyClient_Name 2, Job description text here, Due 1/1/2020</a></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Recent Completed Orders</h3>
-      <p><a href="job_id#0005">Job ID #5, MyClient_Name 3, Job description text here, Delivered 1/1/2019</a></p>
-      <p><a href="job_id#0006">Job ID #6, MyClient_Name 4, Job description text here, Delivered 1/1/2019</a></p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Some Other Heading</h3>
-      <p><a href="link">Some other information to provide</a></p>
-      <p><a href="link">Some other informatino to provide 2</a></p>
-    </div>
+    <h2 style="text-align: center; color: #ff3300">Search Customers</h2>
+    <div class="container">
+    <h3>Search by:</h3>
+    <form action="/action_page.php">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1">
+        <option>Customer ID #</option>
+        <option>Business Name</option>
+        <option>Individual Last Name</option>
+        <option>Phone Number</option>
+      </select>
+      <input type="text" name="" value="">
+
+
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
   </div>
-</div>
-<div align="center">
-  <img src="images/ink_small.jpg" alt="">
-</div>
+
+  </form>
 
   </body>
 </html>
