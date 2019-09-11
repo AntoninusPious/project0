@@ -2,20 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sykes Printing Job Management</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   </head>
   <body>
-    <h1>Sykes Printing - Job Tickets</h1>
-
-    <button type="button" name="new_order">Create new order</button>
-    <button type="button" name="search_oldOrders">Search completed orders</button>
-    <h3>Current open orders</h3>
-    <ul>
-      <li><a href="listings/job#11157.html">{client_name}, {job_id}, {job_dateCreated}</a></li>
-      <li><a href="listings/job#11157.html">{client_name}, {job_id}, {job_dateCreated}</a></li>
-      <li><a href="listings/job#11157.html">{client_name}, {job_id}, {job_dateCreated}</a></li>
+    <div style="margin-bottom: 0" class="jumbotron text-center" style="background-color: #b3d9ff">
+      <h2>Sykes Printing - Job and Customer Management</h2>
+      <p>Interface to display and modify jobs and customer listings</p>
+    </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      <li><a href="#">Create new job ticket</a></li>
+      <li><a href="#">Search job tickets</a></li>
+      <li><a href="#">Search customers</a></li>
     </ul>
-    <h2><a href="pending_sales.html">Pending Sales</a></h2>
-    <h2><a href="contact_us.html">Contact Us</a></h2>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Current Open Orders</h3>
+      <p><a href="job_id#0001">Job ID #1, MyClient_Name 1, Job description text here, Due 1/1/2020</a></p>
+      <p><a href="job_id#0002">Job ID #2, MyClient_Name 2, Job description text here, Due 1/1/2020</a></p>
+      <p><a href="job_id#0003">Job ID #3, MyClient_Name 1, Job description text here, Due 1/1/2020</a></p>
+      <p><a href="job_id#0004">Job ID #4, MyClient_Name 2, Job description text here, Due 1/1/2020</a></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Recent Completed Orders</h3>
+      <p><a href="job_id#0005">Job ID #5, MyClient_Name 3, Job description text here, Delivered 1/1/2019</a></p>
+      <p><a href="job_id#0006">Job ID #6, MyClient_Name 4, Job description text here, Delivered 1/1/2019</a></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Some Other Heading</h3>
+      <p><a href="link">Some other information to provide</a></p>
+      <p><a href="link">Some other informatino to provide 2</a></p>
+    </div>
+  </div>
+</div>
+
   </body>
 </html>
