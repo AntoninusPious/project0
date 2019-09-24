@@ -1,0 +1,9 @@
+$linkhovercolor: red;
+
+div a:hover, nav a:hover {
+  color: $linkhovercolor;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+  color: $linkhovercolor;
+  background-color: gray;
+}

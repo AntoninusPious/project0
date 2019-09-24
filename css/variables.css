@@ -1,0 +1,8 @@
+div a:hover, nav a:hover {
+  color: red; }
+
+.nav > li > a:hover, .nav > li > a:focus {
+  color: red;
+  background-color: gray; }
+
+/*# sourceMappingURL=variables.css.map */

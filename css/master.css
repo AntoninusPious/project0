@@ -1,3 +1,26 @@
-h2 {
+h1, h2, h3 {
   color: #1f3d7a;
+  font-family: helvetica, sans-serif;
+}
+h2 {
+  font-weight: bold;
+    font-size: 32px;
+}
+p {
+  font-family: helvetica, sans-serif;
+  font-weight: normal;
+}
+#sel1 {
+  font-weight: bold;
+}
+.col-sm-4 {
+  text-decoration: none;
+}
+@media print {
+  body {
+    color: black;
+    font-family: serif;
+    font-weight: bold;
+    text-decoration: none;
+  }
 }
